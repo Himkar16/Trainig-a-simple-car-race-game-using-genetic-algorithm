@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+
+
+<style>
+#road{
+  background-color: lightgrey;
+  width: 500px;
+  float:left;  
+  height: 680px;
+ 
+  margin-left: 300px;
+  margin-right: 100px;
+  position:relative;
+}
+#animate1{
+  background-color:black;
+  width: 10px;
+  
+  height: 100px;
+  
+  margin-left: 250px;
+  margin-right: 100px;
+  position:absolute;
+}
+#animate2{
+  background-color:black;
+  width: 10px;
+  
+  height: 100px;
+  
+  margin-left: 250px;
+  margin-right: 100px;
+  position:absolute;
+}
+#animate3{
+  background-color:black;
+  width: 10px;
+  
+  height: 100px;
+  
+  margin-left: 250px;
+  margin-right: 100px;
+  position:absolute;
+}
+#car{
+  background-color:red;
+  width: 25px;
+  
+  height: 0px;
+  
+  margin-left: 0px;
+  margin-top: 0px;
+  position:absolute;
+}
+#enemy_car1{
+  background-color:green;
+  width: 25px;
+  
+  height: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position:absolute;
+}
+#enemy_car2{
+  background-color:green;
+  width: 25px;
+  
+  height: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position:absolute;
+}
+#enemy_car3{
+  background-color:green;
+  width: 25px;
+  
+  height: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position:absolute;
+}
+#enemy_car4{
+  background-color:green;
+  width: 25px;
+  
+  height: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position:absolute;
+}
+#score{
+	margin-left:350px;
+}
+#info{
+  float:left; 
+  width:15%; 
+}
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.4/dist/tf.min.js"></script>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body style="background-color:grey;"> 
+<p id ='info'>Score will be printed hereee</p>
+<div id ="road">
+	<div id="animate1"></div>
+	<div id="animate2"></div>
+	<div id="animate3"></div>
+	<div id="car"></div>
+	<div id="enemy_car1"></div>
+	<div id="enemy_car2"></div>
+	<div id="enemy_car3"></div>
+	<div id="enemy_car4"></div>
+	<div id ="score">
+		<!-- <p id ="sc">000</p> -->
+	</div>
+	<!-- <p><button onclick="myMove()">Click Me</button></p>  -->
+	
+</div>
+
+  <script language="javascript" type="text/javascript" src="neuralnetwork/nn.js"></script>
+  <script language="javascript" type="text/javascript" src="neuralnetwork/matrix.js"></script>
+  <script src="car.js"></script>
+  <script src="Population.js"></script>
+  <script src="sketch_new.js"></script>
+  <script src="enemy_car.js"></script>
+  
+</body>
+
+</html>
